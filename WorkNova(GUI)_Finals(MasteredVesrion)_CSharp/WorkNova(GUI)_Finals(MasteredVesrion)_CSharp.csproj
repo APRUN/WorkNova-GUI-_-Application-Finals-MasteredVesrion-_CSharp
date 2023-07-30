@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AB83BBA3-F2C1-4524-8213-7B6CAA1F9736}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WorkNova_GUI__Finals_MasteredVesrion__CSharp</RootNamespace>
+    <AssemblyName>WorkNova%28GUI%29_Finals%28MasteredVesrion%29_CSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.4\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminForms\AdminDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForms\AdminDashboard.Designer.cs">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Controls\AAdminControls\AddAdminCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin_Controls\AAdminControls\AddAdminCtrl.Designer.cs">
+      <DependentUpon>AddAdminCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Controls\AAdminControls\RemoveAdminCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin_Controls\AAdminControls\RemoveAdminCtrl.Designer.cs">
+      <DependentUpon>RemoveAdminCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Controls\AAdminControls\SearchAdminCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin_Controls\AAdminControls\SearchAdminCtrl.Designer.cs">
+      <DependentUpon>SearchAdminCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Controls\AAdminControls\ViewAdminsCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin_Controls\AAdminControls\ViewAdminsCtrl.Designer.cs">
+      <DependentUpon>ViewAdminsCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Controls\AEmployeeControls\AddEmployeeCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin_Controls\AEmployeeControls\AddEmployeeCtrl.Designer.cs">
+      <DependentUpon>AddEmployeeCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Controls\AEmployeeControls\RemoveEmployeeCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin_Controls\AEmployeeControls\RemoveEmployeeCtrl.Designer.cs">
+      <DependentUpon>RemoveEmployeeCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Controls\AEmployeeControls\SearchEmployeeCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin_Controls\AEmployeeControls\SearchEmployeeCtrl.Designer.cs">
+      <DependentUpon>SearchEmployeeCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Controls\AEmployeeControls\ViewEmployeesCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin_Controls\AEmployeeControls\ViewEmployeesCtrl.Designer.cs">
+      <DependentUpon>ViewEmployeesCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Controls\AJobControls\AddJobCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin_Controls\AJobControls\AddJobCtrl.Designer.cs">
+      <DependentUpon>AddJobCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Controls\AJobControls\RemoveJobCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin_Controls\AJobControls\RemoveJobCtrl.Designer.cs">
+      <DependentUpon>RemoveJobCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Controls\AJobControls\SearchJobCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin_Controls\AJobControls\SearchJobCtrl.Designer.cs">
+      <DependentUpon>SearchJobCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Controls\AJobControls\ViewJobCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin_Controls\AJobControls\ViewJobCtrl.Designer.cs">
+      <DependentUpon>ViewJobCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Controls\AUserControls\AddUserCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin_Controls\AUserControls\AddUserCtrl.Designer.cs">
+      <DependentUpon>AddUserCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Controls\AUserControls\RemoveUserCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin_Controls\AUserControls\RemoveUserCtrl.Designer.cs">
+      <DependentUpon>RemoveUserCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Controls\AUserControls\SearchUserCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin_Controls\AUserControls\SearchUserCtrl.Designer.cs">
+      <DependentUpon>SearchUserCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Controls\AUserControls\ViewUsersCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin_Controls\AUserControls\ViewUsersCtrl.Designer.cs">
+      <DependentUpon>ViewUsersCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BL\Admin.cs" />
+    <Compile Include="BL\AJob.cs" />
+    <Compile Include="BL\Employee.cs" />
+    <Compile Include="BL\FileHandler.cs" />
+    <Compile Include="BL\Full_Time.cs" />
+    <Compile Include="BL\IisPaid.cs" />
+    <Compile Include="BL\Internship.cs" />
+    <Compile Include="BL\Job.cs" />
+    <Compile Include="BL\Part_Time.cs" />
+    <Compile Include="BL\Person.cs" />
+    <Compile Include="BL\User.cs" />
+    <Compile Include="DL\AdminDL.cs" />
+    <Compile Include="DL\EmployeeDL.cs" />
+    <Compile Include="DL\JobDL.cs" />
+    <Compile Include="DL\PersonDL.cs" />
+    <Compile Include="RegistrationForms\SignInForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrationForms\SignInForm.Designer.cs">
+      <DependentUpon>SignInForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrationForms\SignUpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrationForms\SignUpForm.Designer.cs">
+      <DependentUpon>SignUpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Universal_Forms\AboutUsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Universal_Forms\AboutUsForm.Designer.cs">
+      <DependentUpon>AboutUsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Universal_Forms\ContactUsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Universal_Forms\ContactUsForm.Designer.cs">
+      <DependentUpon>ContactUsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Universal_Forms\LoadingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Universal_Forms\LoadingForm.Designer.cs">
+      <DependentUpon>LoadingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Universal_Forms\MessageBoxForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Universal_Forms\MessageBoxForm.Designer.cs">
+      <DependentUpon>MessageBoxForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Universal_Forms\WelcomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Universal_Forms\WelcomeForm.Designer.cs">
+      <DependentUpon>WelcomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\ApplyJobCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\ApplyJobCtrl.Designer.cs">
+      <DependentUpon>ApplyJobCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\HomeCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\HomeCtrl.Designer.cs">
+      <DependentUpon>HomeCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\ViewJobsCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\ViewJobsCtrl.Designer.cs">
+      <DependentUpon>ViewJobsCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\ViewMeCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\ViewMeCtrl.Designer.cs">
+      <DependentUpon>ViewMeCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\ViewMyJob.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\ViewMyJob.Designer.cs">
+      <DependentUpon>ViewMyJob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\UserDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms\UserDashboard.Designer.cs">
+      <DependentUpon>UserDashboard.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminForms\AdminDashboard.resx">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Controls\AAdminControls\AddAdminCtrl.resx">
+      <DependentUpon>AddAdminCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Controls\AAdminControls\RemoveAdminCtrl.resx">
+      <DependentUpon>RemoveAdminCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Controls\AAdminControls\SearchAdminCtrl.resx">
+      <DependentUpon>SearchAdminCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Controls\AAdminControls\ViewAdminsCtrl.resx">
+      <DependentUpon>ViewAdminsCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Controls\AEmployeeControls\AddEmployeeCtrl.resx">
+      <DependentUpon>AddEmployeeCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Controls\AEmployeeControls\RemoveEmployeeCtrl.resx">
+      <DependentUpon>RemoveEmployeeCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Controls\AEmployeeControls\SearchEmployeeCtrl.resx">
+      <DependentUpon>SearchEmployeeCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Controls\AEmployeeControls\ViewEmployeesCtrl.resx">
+      <DependentUpon>ViewEmployeesCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Controls\AJobControls\AddJobCtrl.resx">
+      <DependentUpon>AddJobCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Controls\AJobControls\RemoveJobCtrl.resx">
+      <DependentUpon>RemoveJobCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Controls\AJobControls\SearchJobCtrl.resx">
+      <DependentUpon>SearchJobCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Controls\AJobControls\ViewJobCtrl.resx">
+      <DependentUpon>ViewJobCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Controls\AUserControls\AddUserCtrl.resx">
+      <DependentUpon>AddUserCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Controls\AUserControls\RemoveUserCtrl.resx">
+      <DependentUpon>RemoveUserCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Controls\AUserControls\SearchUserCtrl.resx">
+      <DependentUpon>SearchUserCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Controls\AUserControls\ViewUsersCtrl.resx">
+      <DependentUpon>ViewUsersCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RegistrationForms\SignInForm.resx">
+      <DependentUpon>SignInForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrationForms\SignUpForm.resx">
+      <DependentUpon>SignUpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Universal_Forms\AboutUsForm.resx">
+      <DependentUpon>AboutUsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Universal_Forms\ContactUsForm.resx">
+      <DependentUpon>ContactUsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Universal_Forms\LoadingForm.resx">
+      <DependentUpon>LoadingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Universal_Forms\MessageBoxForm.resx">
+      <DependentUpon>MessageBoxForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Universal_Forms\WelcomeForm.resx">
+      <DependentUpon>WelcomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\ApplyJobCtrl.resx">
+      <DependentUpon>ApplyJobCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\HomeCtrl.resx">
+      <DependentUpon>HomeCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\ViewJobsCtrl.resx">
+      <DependentUpon>ViewJobsCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\ViewMeCtrl.resx">
+      <DependentUpon>ViewMeCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\ViewMyJob.resx">
+      <DependentUpon>ViewMyJob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\UserDashboard.resx">
+      <DependentUpon>UserDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG WorkNove.jpg" />
+    <None Include="Resources\Down Left1.png" />
+    <None Include="Resources\WorkNovaBanner2.png" />
+    <None Include="Resources\Work Nova Round.png" />
+    <None Include="Resources\User.png" />
+    <None Include="Resources\Permanent Job1.png" />
+    <None Include="Resources\Permanent Job.png" />
+    <None Include="Resources\New Job2.png" />
+    <None Include="Resources\New Job.png" />
+    <None Include="Resources\Menu.png" />
+    <None Include="Resources\Logout.png" />
+    <None Include="Resources\Logout Rounded Left.png" />
+    <None Include="Resources\img.icons8.png" />
+    <None Include="Resources\icons8_back_1.png" />
+    <None Include="Resources\Home1.png" />
+    <None Include="Resources\Home.png" />
+    <None Include="Resources\Edit.png" />
+    <None Include="Resources\Edit Job.png" />
+    <None Include="Resources\Down Left.png" />
+    <None Include="Resources\Bag.png" />
+    <None Include="Resources\Apply.png" />
+    <None Include="Resources\Administrator Male.png" />
+    <None Include="Resources\Admin Settings Male.png" />
+    <None Include="Resources\1Home.png" />
+    <None Include="Resources\1Edit.png" />
+    <None Include="Resources\Delete.png" />
+    <None Include="Resources\Search.png" />
+    <None Include="Resources\Add User Male.png" />
+    <None Include="Resources\Useroriginal.png" />
+    <None Include="Resources\DeniedUser.png" />
+    <None Include="Resources\View.png" />
+    <None Include="Resources\Find User Male.png" />
+    <None Include="Resources\Remove Administrator.png" />
+    <None Include="Resources\Add Administrator.png" />
+    <None Include="Resources\Search1.png" />
+    <None Include="Resources\View1.png" />
+    <None Include="Resources\Viewgood.png" />
+    <None Include="Resources\Add Emp Male.png" />
+    <None Include="Resources\allUsers.png" />
+    <None Include="Resources\Denied Emp.png" />
+    <None Include="Resources\Find Empr Male.png" />
+    <None Include="Resources\Back Arrow.png" />
+    <Content Include="Resources\WorkNovaBanner.png" />
+    <None Include="Resources\WorkNovaBanner1.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
